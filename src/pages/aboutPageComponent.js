@@ -21,7 +21,7 @@ class AboutPage extends React.Component {
     this.setState ({isLoading: true});
     axios
       .get (
-        `https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyAndcg3NnjW6nIX3aLzTc2DtSe3h1Ki63k`,
+        `https://www.googleapis.com/books/v1/volumes/${id}?key=yourKey`,
         {}
       )
       .then (res => {

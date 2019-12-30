@@ -17,7 +17,7 @@ class HomePage extends React.Component {
     this.setState ({isLoading: true});
     axios
       .get (
-        `https://www.googleapis.com/books/v1/volumes?q=quilting&orderBy=newest&key=AIzaSyAndcg3NnjW6nIX3aLzTc2DtSe3h1Ki63k`,
+        `https://www.googleapis.com/books/v1/volumes?q=quilting&orderBy=newest&key=yourKey`,
         {}
       )
       .then (res => {
@@ -50,7 +50,7 @@ class HomePage extends React.Component {
       this.setState ({isSearch: true});
       axios
         .get (
-          `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=newest&key=AIzaSyAndcg3NnjW6nIX3aLzTc2DtSe3h1Ki63k`,
+          `https://www.googleapis.com/books/v1/volumes?q=${query}&orderBy=newest&key=`,
           {}
         )
         .then (res => {
